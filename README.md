@@ -1,4 +1,4 @@
-[# Image Dehazing with U-Net
+## Image Dehazing with U-Net
 
 This project provides a powerful, local tool for removing haze from images using a deep learning model. It implements a U-Net architecture enhanced with Squeeze-and-Excitation blocks to achieve high-quality dehazing results, all runnable from your command line.
 
