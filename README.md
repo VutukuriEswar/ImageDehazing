@@ -1,4 +1,4 @@
-# Image Dehazing with U-Net
+[# Image Dehazing with U-Net
 
 This project provides a powerful, local tool for removing haze from images using a deep learning model. It implements a U-Net architecture enhanced with Squeeze-and-Excitation blocks to achieve high-quality dehazing results, all runnable from your command line.
 
@@ -40,15 +40,15 @@ This project provides a powerful, local tool for removing haze from images using
 
 ### Prerequisites
 - Python 3.8+
-- A dehazing dataset (e.g., [RESIDE](https://sites.google.com/view/reside-dehaze-datasets))
+- A dehazing dataset (e.g., RESIDE, I-HAZE, O-HAZE)
 - NVIDIA GPU with CUDA (highly recommended for training, optional for inference)
 
 ### Installation Steps
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/image-dehazing-unet.git
-    cd image-dehazing-unet
+    git clone https://github.com/VutukuriEswar/ImageDehazing
+    cd ImageDehazing
     ```
 
 2.  **Set up a virtual environment**
@@ -66,7 +66,7 @@ This project provides a powerful, local tool for removing haze from images using
     ```
 
 4.  **Prepare your dataset**
-    Create a `data` directory in the project root and organize your paired hazy/clear images as follows:
+    Create a `data` directory in the project root and organize your paired hazy/clear images as follows (In case you want to add data other than something already present in the repository):
     ```
     data/
     ├── train/
@@ -114,8 +114,6 @@ This project provides a powerful, local tool for removing haze from images using
 
 **Dataset Setup:**
 - The project requires a dataset of paired hazy and clear images.
-- We recommend using the **RESIDE** dataset, a large-scale benchmark for dehazing.
-- You can download it from the [official website](https://sites.google.com/view/reside-dehaze-datasets).
 - The `DehazeDataset` class automatically pairs images from the `input` and `target` directories based on alphabetical order of their filenames.
 
 **Model Checkpoints:**
